@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Login.vue'
 import Task from '../views/Task.vue'
 import Profile from '../views/Profile.vue'
+import History from "../views/History";
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
         path: '/profile',
         name: 'Profile',
         component: Profile
+    },
+    {
+        path: '/history',
+        name: 'History',
+        component: History
     }
 
 ]

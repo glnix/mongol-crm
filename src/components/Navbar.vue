@@ -29,6 +29,14 @@
                     <a href="#">Profile</a>
                 </router-link>
 
+                <router-link
+                        tag="li"
+                        to="/history"
+                        active-class="active"
+                >
+                    <a href="#">History</a>
+                </router-link>
+
             </ul>
         </div>
     </nav>
