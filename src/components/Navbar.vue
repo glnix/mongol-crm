@@ -13,21 +13,21 @@
                     <a href="#">Вход</a>
                 </router-link>
 
-                <router-link
-                        tag="li"
-                        to="/tasks"
-                        active-class="active"
-                >
-                    <a href="#">Задание</a>
-                </router-link>
+                <!--      <router-link
+                              tag="li"
+                              to="/tasks"
+                              active-class="active"
+                      >
+                          <a href="#">Задание</a>
+                      </router-link>-->
 
-                <router-link
+             <!--   <router-link
                         tag="li"
                         to="/profile"
                         active-class="active"
                 >
                     <a href="#">Профиль</a>
-                </router-link>
+                </router-link>-->
 
                 <router-link
                         tag="li"

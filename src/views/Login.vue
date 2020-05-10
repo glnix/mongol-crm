@@ -1,5 +1,6 @@
 <template>
     <div class="row">
+        <loading ref="loading"/>
         <div class="col s6 offset-s3">
             <h1>Войти</h1>
 
@@ -25,15 +26,19 @@
 
 <script>
 
+    import LoadingComponent from "../components/LoadingComponent";
+
     export default {
         name: 'Login',
-        components: {},
+        components: {'Loading': LoadingComponent},
         mounted() {
 
         },
         methods: {
-            onLogin: function (event) {
-
+            onLogin: function () {
+               this.$refs.loading.showLoading(() =>{
+                   this.$router.push('History')
+               });
             }
         }
     }

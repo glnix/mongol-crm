@@ -1,11 +1,12 @@
 <template>
     <div class="steps-container">
+        <loading ref="loading"/>
         <div class="step-container">
             <img class="step" src="/img/steps/step_icons/1.png" v-on:click="stepClick1"/>
             <p class="step-desc">Русские города</p>
         </div>
         <div class="step-container">
-            <img class="step inactive" src="/img/steps/step_icons/2.png"/>
+            <img class="step active" src="/img/steps/step_icons/2.png"  v-on:click="stepClick2"/>
             <p class="step-desc">Имя</p>
         </div>
         <div class="step-container">
@@ -29,13 +30,18 @@
 
 <script>
 
+    import LoadingComponent from "../components/LoadingComponent";
+
     export default {
         name: 'History',
-        components: {},
+        components: {'Loading': LoadingComponent},
         methods: {
-            stepClick1: function (event) {
-                this.$router.push({name: 'Task', params: {step: '1essdsdsdsd'}})
-            }
+            stepClick1: function () {
+                this.$refs.loading.showLoading(() => this.$router.push({name: 'Task', params: {step: '1'}}))
+            },
+            stepClick2: function () {
+                this.$refs.loading.showLoading(() => this.$router.push({name: 'Task', params: {step: '2'}}))
+            },
         },
         mounted() {
 
