@@ -1,7 +1,7 @@
 <template>
     <nav class="teal">
         <div class="nav-wrapper">
-            <router-link to="/" class="brand-logo">Mongol Russian Test</router-link>
+            <router-link to="/" class="brand-logo">Марафон - Русский язык</router-link>
             <ul class="right hide-on-med-and-down">
 
                 <router-link
@@ -10,7 +10,7 @@
                         exact
                         active-class="active"
                 >
-                    <a href="#">Login</a>
+                    <a href="#">Вход</a>
                 </router-link>
 
                 <router-link
@@ -18,7 +18,7 @@
                         to="/tasks"
                         active-class="active"
                 >
-                    <a href="#">Tasks</a>
+                    <a href="#">Задание</a>
                 </router-link>
 
                 <router-link
@@ -26,7 +26,7 @@
                         to="/profile"
                         active-class="active"
                 >
-                    <a href="#">Profile</a>
+                    <a href="#">Профиль</a>
                 </router-link>
 
                 <router-link
@@ -34,7 +34,7 @@
                         to="/history"
                         active-class="active"
                 >
-                    <a href="#">History</a>
+                    <a href="#">Этапы</a>
                 </router-link>
 
             </ul>
