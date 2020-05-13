@@ -15,7 +15,7 @@
         </div>
         <div class="step-container">
             <img class="step inactive" src="/img/steps/step_icons/4.png"/>
-            <p class="step-desc">Второй язык</p>
+            <p class="step-desc">Язык интернета</p>
         </div>
         <div class="step-container">
             <img class="step inactive" src="/img/steps/step_icons/5.png"/>
@@ -59,7 +59,14 @@
     }
 
     .step-container {
+        position: relative;
         text-align: center;
+    }
+    .step-container:not(:last-child):after {
+        position: absolute;
+        top: 5.5em;
+        right: 0;
+        content: "→";
     }
 
     .step {
@@ -73,7 +80,7 @@
     }
 
     .step.inactive {
-        opacity: 0.2;
+        opacity: 0.3;
     }
 
 </style>

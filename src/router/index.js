@@ -4,6 +4,8 @@ import Home from '../views/Login.vue'
 import Task from '../views/Task.vue'
 import Profile from '../views/Profile.vue'
 import History from "../views/History";
+import About from "../views/About";
+import Contacts from "../views/Contacts";
 
 Vue.use(VueRouter)
 
@@ -27,6 +29,16 @@ const routes = [
         path: '/history',
         name: 'History',
         component: History
+    },
+    {
+        path: '/about',
+        name: 'About',
+        component: About
+    },
+    {
+        path: '/contacts',
+        name: 'Contacts',
+        component: Contacts
     }
 
 ]

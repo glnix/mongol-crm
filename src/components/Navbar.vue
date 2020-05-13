@@ -1,7 +1,8 @@
 <template>
-    <nav class="teal">
+    <nav class="light-blue">
         <div class="nav-wrapper">
-            <router-link to="/" class="brand-logo">Марафон - Русский язык</router-link>
+            <router-link to="/" class="brand-logo">
+                <img src="/img/icons/logo50.png" height="38" width="38"/>Марафон: Россия - русский язык</router-link>
             <ul class="right hide-on-med-and-down">
 
                 <router-link
@@ -35,6 +36,22 @@
                         active-class="active"
                 >
                     <a href="#">Этапы</a>
+                </router-link>
+
+                <router-link
+                        tag="li"
+                        to="/about"
+                        active-class="active"
+                >
+                    <a href="#">О марафоне</a>
+                </router-link>
+
+                <router-link
+                        tag="li"
+                        to="/contacts"
+                        active-class="active"
+                >
+                    <a href="#">Контакты</a>
                 </router-link>
 
             </ul>

@@ -1,9 +1,20 @@
 <template>
     <div id="app">
-        <Navbar/>
-        <div class="container">
-            <router-view/>
-        </div>
+        <main>
+            <Navbar/>
+            <div class="container">
+                <router-view/>
+            </div>
+        </main>
+
+        <footer class="page-footer light-blue">
+            <div class="footer-copyright light-blue">
+                <div class="container">
+                    © 2020 УрФУ
+                </div>
+            </div>
+        </footer>
+
     </div>
 </template>
 
@@ -18,4 +29,14 @@
 
 <style>
     @import "~materialize-css/dist/css/materialize.min.css";
+
+    #app {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
 </style>

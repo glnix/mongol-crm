@@ -1,15 +1,15 @@
 <template>
     <div class="row">
-        <div class="col s6 offset-s3">
+        <div class="col s8 offset-s2">
             <loading ref="loading"/>
             <h1>{{ title }}</h1>
 
             <video width="100%" height="100%" controls :src="videoSource"
                    type="video/mp4" class="task-video-container" v-show="showVideo"/>
 
-            <div>{{ description }}</div>
+            <div v-html="description"></div>
             <input class="fileInput" type="file" id="file" ref="file" v-on:change="handleFileUpload"/>
-            <a class="waves-effect waves-light btn-large" id="upload-btn" v-on:click="addFiles">
+            <a class="waves-effect waves-light btn-large light-blue" id="upload-btn" v-on:click="addFiles">
                 <i class="material-icons right">publish</i>{{ uploadBtnTitle }}</a>
             <div class="fileName">{{ file }}</div>
 
@@ -27,7 +27,9 @@
             if (this.$route.params.step === '1') {
                 this.title = 'Русские города'
                 this.showVideo = true
-                this.description = "Расскажи про свой город, покажи его достопримечательности, его историю."
+                this.description = "Здравствуйте, друзья! Мы объявляем старт марафона по русскому языку. И первая наша тема – «Города России». Мы хотим чуть ближе познакомить вас с географией и культурой России. Перед вами видео о Екатеринбурге. Посмотрите его, пожалуйста, и перейдите по ссылке, чтобы выполнить конкурсные задания: \n" +
+                    "<a href='https://drive.google.com/drive/folders/1as4XfCHx0t4hgBobOrxKImYyADIgZxDc'>Ссылка</a><br>" +
+                    "Обращаем ваше внимание на то, что в разделе «О марафоне» вы можете прочитать, как работать на этом сайте."
             } else if (this.$route.params.step === '2') {
                 this.title = 'Имя'
                 this.showVideo = false
