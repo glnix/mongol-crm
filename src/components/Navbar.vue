@@ -30,13 +30,13 @@
                     <a href="#">Профиль</a>
                 </router-link>-->
 
-                <router-link
+              <!--  <router-link
                         tag="li"
                         to="/history"
                         active-class="active"
                 >
                     <a href="#">Этапы</a>
-                </router-link>
+                </router-link>-->
 
                 <router-link
                         tag="li"
