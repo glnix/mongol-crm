@@ -38,7 +38,7 @@
         },
         data() {
             return {
-                videoSource: "https://content.yar-net.ru/cams/sample/10.mp4",
+                videoSource: "https://videos1.hb.bizmrg.com/step1.mp4",
                 title: "",
                 showVideo: false,
                 description: "",
