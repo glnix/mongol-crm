@@ -6,7 +6,7 @@
             <p class="step-desc">По городам России</p>
         </div>
         <div class="step-container">
-            <img class="step active" src="/img/steps/step_icons/2.png"  v-on:click="stepClick2"/>
+            <img class="step inactive" src="/img/steps/step_icons/2.png"/>
             <p class="step-desc">Имя - это судьба</p>
         </div>
         <div class="step-container">
@@ -62,11 +62,13 @@
         position: relative;
         text-align: center;
     }
+
     .step-container:not(:last-child):after {
         position: absolute;
-        top: 5.5em;
+        top: 2.5em;
         right: 0;
         content: "→";
+        font-size: 2em;
     }
 
     .step {
