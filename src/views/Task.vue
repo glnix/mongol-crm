@@ -25,7 +25,7 @@
         components: {'Loading': LoadingComponent},
         mounted() {
             if (this.$route.params.step === '1') {
-                this.title = 'Русские города'
+                this.title = 'По городам России'
                 this.showVideo = true
                 this.description = "Здравствуйте, друзья! Мы объявляем старт марафона по русскому языку. И первая наша тема – «Города России». Мы хотим чуть ближе познакомить вас с географией и культурой России. Перед вами видео о Екатеринбурге. Посмотрите его, пожалуйста, и перейдите по ссылке, чтобы выполнить конкурсные задания: \n" +
                     "<a href='https://drive.google.com/drive/folders/1as4XfCHx0t4hgBobOrxKImYyADIgZxDc'>Ссылка</a><br>" +
