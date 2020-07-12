@@ -28,7 +28,7 @@
                 this.title = 'По городам России'
                 this.showVideo = true
                 this.description = "Здравствуйте, друзья! Мы объявляем старт марафона по русскому языку. И первая наша тема – «Города России». Мы хотим чуть ближе познакомить вас с географией и культурой России. Перед вами видео о Екатеринбурге. Посмотрите его, пожалуйста, и перейдите по ссылке, чтобы выполнить конкурсные задания: \n" +
-                    "<a href='https://drive.google.com/drive/folders/1as4XfCHx0t4hgBobOrxKImYyADIgZxDc'>Ссылка</a><br>" +
+                    "<a href='https://drive.google.com/drive/folders/1Jypkpwgv614zMy1zgWbwQH574bQmRkAV'>Ссылка</a><br>" +
                     "Обращаем ваше внимание на то, что в разделе «О марафоне» вы можете прочитать, как работать на этом сайте."
             } else if (this.$route.params.step === '2') {
                 this.title = 'Имя'
