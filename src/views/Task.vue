@@ -2,6 +2,15 @@
     <div class="row">
         <div class="col s8 offset-s2">
             <loading ref="loading"/>
+
+            <router-link
+                    tag="a"
+                    to="/history"
+                    active-class="active"
+            >
+                <a href="#"><h4>← назад к этапам</h4></a>
+            </router-link>
+
             <h1>{{ title }}</h1>
 
             <video width="100%" height="100%" controls :src="videoSource"
@@ -82,4 +91,5 @@
     .fileInput {
         display: none;
     }
+
 </style>
