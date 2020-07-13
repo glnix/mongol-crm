@@ -31,9 +31,9 @@
                     "<a href='https://drive.google.com/drive/folders/1Jypkpwgv614zMy1zgWbwQH574bQmRkAV'>Ссылка</a><br>" +
                     "Обращаем ваше внимание на то, что в разделе «О марафоне» вы можете прочитать, как работать на этом сайте."
             } else if (this.$route.params.step === '2') {
-                this.title = 'Имя'
+                this.title = 'Имя - это судьба'
                 this.showVideo = false
-                this.description = "Расскажи про свое имя."
+                this.description = "Задания доступны по <a href='https://drive.google.com/drive/folders/176ZL4-JwF1eWHAzh-bBo_CgcPFPq0oNI'>ссылке</a>"
             }
         },
         data() {
