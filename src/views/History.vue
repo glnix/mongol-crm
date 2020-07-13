@@ -6,7 +6,7 @@
             <p class="step-desc">По городам России</p>
         </div>
         <div class="step-container">
-            <img class="step inactive" src="/img/steps/step_icons/2.png" v-on:click="stepClick2"/>
+            <img class="step" src="/img/steps/step_icons/2.png" v-on:click="stepClick2"/>
             <p class="step-desc">Имя - это судьба</p>
         </div>
         <div class="step-container">
